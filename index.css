@@ -1,0 +1,103 @@
+/*
+
+*   Humber Fitness v1.0 Default Stylesheet 
+*	Author: Kay (Full-stack web developer)
+*	Author Email: investorkay@gmail.com
+*	Author URI: www.codeslave.com
+*	Template Name: Humber Fitness
+*   Start date: 4-06-2020
+ 
+ __   __   												
+|  |_/  /
+|      /	
+|     /	  __ ____   __
+|  '  \	 / _` |	|  | |					
+|  |\  \| (_| | |__| |
+|__| \__\\__,_|____. | 				
+		   		   | |	
+	           	   | |
+ 	     	 |_______|	
+
+=====================================================================*/
+
+/*basic*/
+
+:root {
+  /*primary colours*/
+    
+  --silver: #e9f0f2;
+  --green: #1e6e69;
+  --dark-slate: #bdc5cc;
+  --tan: #d7cdc7;
+  --brown: #bfa18f;
+    
+  --grey: #e5e5e5;
+
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+  	/*font-size: 62.5%; make rem units base on 10*/
+
+  /*font families*/
+  --font-primary: Lato, Tahoma, Calibri, sans-serif;
+  --font-secondary: "Goudy Bookletter" Mono, Tahoma, Calibri, sans-serif;
+  --font-tertiary: Oswald, Tahoma, Calibri, sans-serif;
+
+}
+
+body{
+	font-weight: 400;
+	line-height: 1.5;
+	min-width: 320px;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+	font-family: var(--font-primary);
+}
+
+body > header > h1{
+	font-size: 7w;	/*Heading is never too small or wider than document itself*/
+}
+
+
+hr {
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid #fff;
+}
+
+
+/*
+============================================================================================================================================================*/
+
+
+/*Zooming problem*/
+
+html{
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+
+
+/*
+============================================================================================================================================================*/
+
+/*Link styles*/
+
+a {
+	color: #34495e;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+a:link{
+	/*style only unvisited links*/
+}
+
+a:hover,
+a:focus {
+  color: #d9534f;
+  text-decoration: none;
+  outline: none;
+}
+
