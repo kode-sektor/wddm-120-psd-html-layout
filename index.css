@@ -39,9 +39,15 @@
 
   /*font families*/
   --font-primary: Lato, Tahoma, Calibri, sans-serif;
-  --font-secondary: "Goudy Bookletter" Mono, Tahoma, Calibri, sans-serif;
+  --font-secondary: "Goudy Bookletter 1911", Mono, Tahoma, Calibri, sans-serif;
   --font-tertiary: Oswald, Tahoma, Calibri, sans-serif;
 
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body{
@@ -54,10 +60,27 @@ body{
 	font-family: var(--font-primary);
 }
 
+p {
+	margin-bottom: 16px;
+}
+img {
+	max-width: 100%;
+	display: block;
+	vertical-align: bottom;
+}
+figure img{
+	transition: opacity .2s;
+}
+figure img:hover, figure img:focus {
+	opacity: .8;
+}
 body > header > h1{
 	font-size: 7w;	/*Heading is never too small or wider than document itself*/
 }
 
+ul {
+	list-style: none;
+}
 
 hr {
   border-top: 1px solid var(--grey);
@@ -83,7 +106,6 @@ html{
 /*Link styles*/
 
 a {
-	color: #34495e;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -o-transition: 300ms;
@@ -96,8 +118,184 @@ a:link{
 
 a:hover,
 a:focus {
-  color: #d9534f;
+  color: var(--green);
   text-decoration: none;
   outline: none;
 }
 
+.page-header {
+	background: rgb(30,110,103,.7);
+	margin-bottom: 1.5em;
+}
+.page-header a {
+	text-decoration: none;
+	color: snow;
+}
+.logo-frame {
+	font-family: var(--font-secondary);
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.logo-frame .fa-home {
+	color: #000;
+}
+.main-nav-links a {
+	display: block;
+}
+.button-nav {
+	width: 2em;
+	height: 2em;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.button-nav span.fa-bars:before {
+	display: block;
+	font-size: 1.5em;
+}
+.main-nav-links li:last-child a {
+	color: black;
+}
+
+
+
+/*PAGE*/
+
+/*Supporting Visuals*/
+.page {
+	display: grid;
+}
+.supporting-visuals {
+	position: relative;
+	padding: 20px;
+	background: rgba(233, 240, 242, .7);
+}
+.supporting-visuals > div {
+	position: relative;
+	height: 400px; 
+	width: 80%;
+	background-image: url(img/humber-room.png);
+	margin: auto;
+	border: px #fff solid;
+	border-bottom: 3px solid var(--green);
+}
+.supporting-visuals .desc {
+	position: absolute;
+	bottom: 0;
+	line-height: 1.3em;
+	background: var(--dark-slate);
+	color: white;
+	left: 0;
+	right:0;
+	padding: 20px 0;
+	width: 100%;
+	color: black;
+	font-family: var(--font-tertiary);
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*main*/
+section[role="main"] > header:first-of-type {
+	padding: 20px ;
+	background-color: rgba(233, 240, 242, .7);
+	text-align: center;
+	font-family: var(--font-tertiary);
+	text-transform: uppercase;
+	font-size: 1.1em;
+	color: var(--green);
+	margin-bottom: 20px;
+}
+section[role="main"] > header:first-of-type h3 {
+	font-weight: 600;
+	padding: .3em .2em;
+}
+section[role="main"] > header:first-of-type p {
+	padding: .5em .2em;
+	color: transparent;
+	margin: 0 -20px;
+	text-shadow: 1px 0px 1px rgba(255,255,255,.9);
+	text-transform: capitalize;
+	background: black;
+	opacity: .9;
+}
+
+/*article*/
+article[role="article"], aside[role="complementary"] {
+	padding: 20px;
+	text-align: center;
+	background: rgba(233, 240, 242, .5);
+}
+article p em {
+	font-style: normal;
+}
+article h2, article h3, article h4, aside[role="complementary"] h4 {
+	margin-bottom: 20px;
+	font-family: var(--font-secondary);
+}
+article h4, aside[role="complementary"] h4 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+article h2 + p, article h3 + p {
+	line-height: 1.8em;
+	margin-bottom: 16px;
+}
+article[role="article"] .img-container {
+	margin: 20px 0;
+}
+p.reg-details {
+	text-transform: uppercase;
+	opacity: .8;
+	margin-bottom: 1em;
+}
+p.reg-details span {
+	display: block;
+	margin-bottom: 10px;
+}
+.register-btn {
+	display: block;
+	line-height: 1.5em;
+	border: 2px solid var(--brown);
+	letter-spacing: 1.1px;
+	padding: 15px;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: .9em;
+	text-transform: uppercase;
+	white-space: normal;
+	background: rgba(191, 161, 143. 8);
+	cursor: pointer;
+	transition: all .2s;
+}
+.register-btn:hover, .register-btn:focus {
+	border-color: var(--green);
+ }
+.main-img {
+	border: 3px solid white;
+}
+
+aside[role="complementary"] h4 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/*Footer*/
+.page-footer {
+	display: flex;
+	padding: 20px;
+	width: 100%;
+	justify-content: space-between;
+	background: black;
+	border: 2px solid white;
+	color: white;
+	font-family: var(--font-tertiary);
+}
+.page-footer p {
+	margin: 0;
+}
+.page-footer p.sm-links a {
+	display: inline-block;
+	margin-right: 10px;
+	color: var(--dark-slate);
+}

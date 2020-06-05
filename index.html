@@ -27,7 +27,7 @@
         ================================================== -->
         <link href="/YOUR_PATH/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="index.css" type="text/css" title="central styles" media="screen, projection"> 
-        <link rel="stylesheet" href="responsiveness.css" type="text/css" title="central styles" media="screen, projection">
+        <link rel="stylesheet" href="responsiveness.css" type="text/css" media="screen, projection">
 
         <!--FONTS-->
         <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Lato&family=Oswald:wght@300&display=swap" rel="stylesheet"> 
@@ -43,21 +43,24 @@
             <header class="page-header" role="banner">
                 
                 <div class="main-nav" role="navigation">
+
+                    <a href="index.html" class="logo-frame">                    
+                        <span class="fa fa-home"></span> Humber                     
+                    </a>
+
+                    <button class="button-nav"><span class="fa fa-bars"></span></button>
                 
-                    <nav id="main-nav-bar" role="navigation">                                    
+                    <nav class="main-nav-bar" role="navigation">                                    
                         <ul id="main-nav-links" class="main-nav-links">                    
                             <li><a href="alerts.php">Alerts</a></li>
                             <li><a href="myHumber.php">myHumber</a></li>
                             <li><a href="calendar.php">Calendar</a></li>
                             <li><a href="services.php">Services</a></li>  
                             <li><a href="directory.php">Directory</a></li>                                                
-                            <li><a href="registered.php">Welcome, KAY</a></li>                                                
+                            <li><a href="edit-contact.php">Welcome, KAY</a></li>                                                
                         </ul>                    
                     </nav>                
-                    <a href="index.html" class="logo-frame">                    
-                        <img class="company-logo"  src="" alt="">Humber                     
-                    </a>
-                    
+                   
                 </div>
             
             </header>
@@ -75,7 +78,9 @@
             <section class="page">
                 
                 <section class="supporting-visuals">
-                    <div></div>
+                    <div>
+                        <p class="desc">HUMBER FITNESS CENTER</p>
+                    </div>
                 </section>
                         
                 <section role="main">
@@ -87,50 +92,57 @@
 
                     <article role="article">
                         <h3>WINTER REGISTRATION BEGINS</h3>
-                        <p class="lead"><em>Dates and deadlines for the summer 2020 session can be found at the Summer Website</em>. Below is a listing of academic and financial dates and deadlines. Please visit the respective office’s website for more detailed information on any of the dates and deadlines listed below. To facilitate with this..</p>
+                        <p class="lead"><em>Dates and deadlines for the summer 2020 gym enrolment session can be found at the Summer Website</em>. Due to the unforeseen COVID-19 pandemic, we have now found reasons to shuffle the gymnasium schedule and put <a href="#">some new guidelines in place</a>. This is done, not to cause any inconvenience but further underscore our desire to always have you in good health.</p>
+
+                        <div class="img-container">
+                            <img src="img/humber-room.png" class="main-img" alt="main humber room">
+                        </div>
 
                         <h4>Register Now</h4>
                         <p class="reg-details">
                             <span class="date">June 8, 2020</span>
-                            <span>The registration timetable planning tool is available in Humber College for the 2020-2021 academic year.</span>
+                            <span>The registration timetable planning tool is available in Humber Gym Board for the 2020-2021 academic year.</span>
                         </p>
+
+                        <a class="register-btn">Register Now <span class="fa fa-pencil"></span></a>
+
                     </article>
 
-                    <div class="img-container">
-                        <img src="">
-                    </div>
-
-                    <button class="register">Register Now <img src=""></button>
-
-                <section>
+                </section>
 
             </section>
 
             <aside role="complementary">
 
-                <div class="img-container">
+                <h4 class="humber-facilities">Humber Facilities</h4>
+
+                <div class="img-container facilities">
                     <figure>
-                        <img>
+                        <img src="img/humber-gym-1.jpg" alt="humber gym 1">
                         <figcaption>LakeShore Sport Facilities</figcaption>
                     </figure>
                 </div>
 
-                <div class="img-container">
+                <div class="img-container facilities">
                     <figure>
-                        <img>
+                        <img src="img/humber-gym-2.jpg" alt="humber gym 2">
                         <figcaption>Guelph Humber Fitness Center</figcaption>
                     </figure>
                 </div>
 
             </aside>
             
-            <footer id="page-footer" role="contentinfo">
-                <p>&copy; 2020,</p>
-                <p>Humber</p>
+            <footer class="page-footer" role="contentinfo">
+                <p>Humber &copy; 2020</p>
+                <p class="sm-links">
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="#"><span class="fa fa-youtube"></span></a>
+                </p>
             </footer>     
 
         </div>    
     
-    </body>
+    </section></section></body>
         
 </html>
