@@ -65,6 +65,7 @@ p {
 }
 img {
 	max-width: 100%;
+	height: auto;
 	display: block;
 	vertical-align: bottom;
 }
@@ -132,6 +133,7 @@ a:focus {
 	color: snow;
 }
 .logo-frame {
+	display: block;
 	font-family: var(--font-secondary);
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -141,6 +143,7 @@ a:focus {
 }
 .main-nav-links a {
 	display: block;
+	padding: 0 5px;
 }
 .button-nav {
 	width: 2em;
@@ -175,6 +178,10 @@ a:focus {
 	height: 400px; 
 	width: 80%;
 	background-image: url(img/humber-room.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: border-box;
+	background-position: center;
 	margin: auto;
 	border: px #fff solid;
 	border-bottom: 3px solid var(--green);
@@ -222,6 +229,7 @@ section[role="main"] > header:first-of-type p {
 
 /*article*/
 article[role="article"], aside[role="complementary"] {
+	position: relative;
 	padding: 20px;
 	text-align: center;
 	background: rgba(233, 240, 242, .5);
@@ -252,6 +260,8 @@ p.reg-details {
 p.reg-details span {
 	display: block;
 	margin-bottom: 10px;
+	width: 100%;
+	line-height: 1.5em;
 }
 .register-btn {
 	display: block;
@@ -281,15 +291,19 @@ aside[role="complementary"] h4 {
 }
 
 /*Footer*/
-.page-footer {
+.page-footer, .footer {
 	display: flex;
 	padding: 20px;
 	width: 100%;
 	justify-content: space-between;
 	background: black;
+	margin: 0 auto;
 	border: 2px solid white;
 	color: white;
 	font-family: var(--font-tertiary);
+}
+.footer {
+	width: 100%;
 }
 .page-footer p {
 	margin: 0;
