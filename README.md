@@ -6,4 +6,4 @@
 
 ## Overview
 
-This is a small project that converts a Photoshop-designed layout to an actual web design; reinforcing web concepts like typography, colour combination and the grid system.
+This is a small project that converts a Photoshop-designed layout to an actual web design; reinforcing web concepts like typography, colour combination and the implementation of the CSS grid system.
