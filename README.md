@@ -4,6 +4,8 @@
 
 Link: https://kode-sektor.github.io/wddm-120-psd-html-layout/
 
+<img src="img/humber-fitness-centre.png" alt="project poster image" />
+
 ---
 
 ## Overview
